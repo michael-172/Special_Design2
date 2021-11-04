@@ -213,7 +213,7 @@ body {
     position: fixed;
     left: -260px;
     top: 0;
-    background-color: #ffffff7a;
+    background-color: #ffffffed;
     width: 260px;
     z-index: 4;
     min-height: 100vh;
@@ -327,6 +327,11 @@ body {
     padding: 4px 13px;
     border-radius: 8px;
     cursor: pointer;
+    position: absolute;
+    left: 50%;
+    margin-left: -40%;
+    border: none;
+    color: #FFF;
 }
 
 @media (max-width: 575px) {
