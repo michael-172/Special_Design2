@@ -40,7 +40,7 @@ yesButton.classList.add('disapled');
 
 
 if (window.localStorage.getItem('background_option') !== null) {
-    let backgroundLocal = window.localStorage.getItem('background_option');
+    let backgroundLocal = window.localStorage.getItem('background-option');
     if (backgroundLocal === 'yes') {
         backgroundOption = true;
         remove_put_disapled(noButton, yesButton);
@@ -278,7 +278,7 @@ function remove_put_disapled(element1, element2){
     element2.classList.add('disapled');
 }
 
-// randomizeImgs();
+randomizeImgs();
 scrollToSomewhere(allBullets);
 scrollToSomewhere(myIcons);
 scrollToSomewhere(myLinks);
@@ -399,8 +399,10 @@ let backgroundLSItem = localStorage.getItem("background-option");
 if (backgroundLSItem !== 0) {
   if (backgroundLSItem === "true") {
     backgroundOption = true;
+     randomizeImgs();
   } else {
     backgroundOption = false;
+      clearInterval(backgroundInterval);
   }
 
   document.querySelectorAll(".random-backgrounds2 span").forEach((element) => {
