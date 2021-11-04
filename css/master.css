@@ -319,6 +319,16 @@ body {
     opacity: 1;
 }
 
+.settings-box2 .reset2 {
+    text-align: center;
+    background-color: var(--main-color);
+    width: 80%;
+    margin: 30px auto;
+    padding: 4px 13px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 @media (max-width: 575px) {
     .settings-box2 .toggle-settings2 {
         display: block;
