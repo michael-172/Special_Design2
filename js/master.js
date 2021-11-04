@@ -260,7 +260,7 @@ function randomizeImgs() {
     if (backgroundOption === true) {
         backgroundInterval = setInterval(() => {
             let randomNumber = Math.floor(Math.random() * imgsArray.length)
-            landingPage.style.backgroundImage = `url(../imgs/${pathsArray[randomNumber]})`
+            landingPage.style.backgroundImage = `url(./imgs/${pathsArray[randomNumber]})`
         }, 4000);
     }
 
@@ -278,7 +278,7 @@ function remove_put_disapled(element1, element2){
     element2.classList.add('disapled');
 }
 
-// randomizeImgs();
+randomizeImgs();
 scrollToSomewhere(allBullets);
 scrollToSomewhere(myIcons);
 scrollToSomewhere(myLinks);
